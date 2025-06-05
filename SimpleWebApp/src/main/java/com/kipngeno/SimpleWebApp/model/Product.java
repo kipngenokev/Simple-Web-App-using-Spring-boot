@@ -1,12 +1,15 @@
 package com.kipngeno.SimpleWebApp.model;
 
-import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
-@Data
+
 @Component
+@Entity
 public class Product {
 
+    @Id
     private int productId;
     private String productName;
     private double price;
